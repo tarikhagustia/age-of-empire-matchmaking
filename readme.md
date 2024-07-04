@@ -11,9 +11,9 @@ pip install -r requirements.txt
 ```
 3. Run the server
 ```bash
+cd ui && yarn && yarn build
 python manage.py runserver
 ```
-
 ## Todos
 - [ ] Create a table structure for the database
 - [ ] UI Integration with reactjs
