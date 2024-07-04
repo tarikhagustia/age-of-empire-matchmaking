@@ -5,11 +5,19 @@ this website also designed to be integrated with Age Of Empire games elo, so whe
 
 ## Installation
 1. Clone the repository
-2. Install the dependencies
+2. Create python env
+```bash
+python3.12 -m venv yourEnvName
+```
+3. Add yourEnvName to .gitignore
+``` example
+yourEnvName/
+```
+4. Install the dependencies
 ```bash
 pip install -r requirements.txt
 ```
-3. Run the server
+5. Run the server
 ```bash
 cd ui && yarn && yarn build
 python manage.py runserver
