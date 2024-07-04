@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -55,6 +56,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [BASE_DIR, str(BASE_DIR) + "/match/html/"],
+
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -150,6 +152,10 @@ STATICFILES_DIRS = [
 ]
 MEDIA_URL = "files/"
 MEDIA_FILES = BASE_DIR/'files'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "ui/build/static")
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
