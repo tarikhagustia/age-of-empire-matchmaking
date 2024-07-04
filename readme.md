@@ -7,9 +7,11 @@ this website also designed to be integrated with Age Of Empire games elo, so whe
 1. Clone the repository
 2. Install the dependencies
 ```bash
+pip install -r requirements.txt
 ```
 3. Run the server
 ```bash
+python manage.py runserver
 ```
 
 ## Todos
