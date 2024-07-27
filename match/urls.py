@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.views.generic import TemplateView
+
+from globalApp import views as api
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", TemplateView.as_view(template_name="index.html"))
+    path('add_player/',api.addEditPlayer),
+    path('get_player/',api.getAllPlayer),
 ]
